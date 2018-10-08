@@ -79,9 +79,6 @@ class Shrink extends AbstractEndpoint
         $index = $this->index;
         $target = $this->target;
         $uri = "/$index/_shrink/$target";
-        if (isset($index) === true && isset($target) === true) {
-            $uri = "/$index/_shrink/$target";
-        }
 
         return $uri;
     }

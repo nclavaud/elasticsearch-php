@@ -32,10 +32,6 @@ class Close extends AbstractEndpoint
         $index = $this->index;
         $uri   = "/$index/_close";
 
-        if (isset($index) === true) {
-            $uri = "/$index/_close";
-        }
-
         return $uri;
     }
 

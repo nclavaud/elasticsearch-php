@@ -38,10 +38,6 @@ class Delete extends AbstractEndpoint
         $type = $this->type;
         $uri   = "/$index/$type/_mapping";
 
-        if (isset($index) === true && isset($type) === true) {
-            $uri = "/$index/$type/_mapping";
-        }
-
         return $uri;
     }
 

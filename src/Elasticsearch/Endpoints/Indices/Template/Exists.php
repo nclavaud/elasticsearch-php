@@ -55,10 +55,6 @@ class Exists extends AbstractEndpoint
         $name = $this->name;
         $uri   = "/_template/$name";
 
-        if (isset($name) === true) {
-            $uri = "/_template/$name";
-        }
-
         return $uri;
     }
 

@@ -101,10 +101,6 @@ class Create extends AbstractEndpoint
         $snapshot = $this->snapshot;
         $uri   = "/_snapshot/$repository/$snapshot";
 
-        if (isset($repository) === true && isset($snapshot) === true) {
-            $uri = "/_snapshot/$repository/$snapshot";
-        }
-
         return $uri;
     }
 

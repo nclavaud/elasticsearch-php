@@ -61,10 +61,6 @@ class Delete extends AbstractEndpoint
         $name = $this->name;
         $uri   = "/$index/_alias/$name";
 
-        if (isset($index) === true && isset($name) === true) {
-            $uri = "/$index/_alias/$name";
-        }
-
         return $uri;
     }
 

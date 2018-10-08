@@ -60,10 +60,6 @@ class Explain extends AbstractEndpoint
         $type = $this->type;
         $uri   = "/$index/$type/$id/_explain";
 
-        if (isset($index) === true && isset($type) === true && isset($id) === true) {
-            $uri = "/$index/$type/$id/_explain";
-        }
-
         return $uri;
     }
 

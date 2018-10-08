@@ -49,10 +49,6 @@ class Create extends AbstractEndpoint
         $index = $this->index;
         $uri   = "/$index";
 
-        if (isset($index) === true) {
-            $uri = "/$index";
-        }
-
         return $uri;
     }
 
